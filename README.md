@@ -1,4 +1,4 @@
-# Ruby on Rails Portfolio
+# Ruby on Rails Portfolio Application
 
 > This is Ruby on Rails 5 application that allows users to create their own portfolios.
 
