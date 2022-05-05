@@ -7,10 +7,10 @@ class User < ApplicationRecord
   validates_presence_of :name
 
   def first_name
-    name.to_s.split.first
+    name.split.first
   end
 
   def last_name
-    name.to_s.split.last
+    name.split.last
   end
 end
