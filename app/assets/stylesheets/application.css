@@ -6,3 +6,7 @@ body {
 .top a {
     color: brown !important;
 }
+
+.my-special-class {
+    color: #B00100;
+}
