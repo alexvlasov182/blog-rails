@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def login_helper
     if current_user.is_a?(User)
       link_to 'Logout', destroy_user_session_path, method: :delete
@@ -13,4 +14,5 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
+
 end
