@@ -4,5 +4,5 @@ body {
 }
 
 .top a {
-    color: brown;
+    color: brown !important;
 }
