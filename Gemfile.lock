@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/alexvlasov182/blog_portfolio_view_tool
+  revision: f62a6e24ee59ecf41f5b6e40ae9ee8422d95d94d
+  specs:
+    blog_portfolio_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -194,6 +200,7 @@ PLATFORMS
   x86_64-darwin-17
 
 DEPENDENCIES
+  blog_portfolio_view_tool!
   bootstrap (~> 4.6.1)
   byebug
   coffee-rails (~> 4.2)

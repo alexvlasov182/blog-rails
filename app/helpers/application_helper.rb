@@ -15,4 +15,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    BlogPortfolioViewTool::Render.copyright 'Alex Vlasov', 'All rights reserved'
+  end
+
 end
