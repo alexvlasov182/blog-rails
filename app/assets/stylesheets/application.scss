@@ -112,6 +112,21 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
+/*
+ * Custom Styles
+ */
+
 .left {
   text-align: left;
 }
+.card-body {
+  color: black;
+  text-align: left;
+}
+.cover-container {
+  max-width: 60rem;
+}
+.auth-links a {
+  color: black;
+}
+
