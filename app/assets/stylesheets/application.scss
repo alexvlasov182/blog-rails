@@ -104,7 +104,6 @@ body {
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
@@ -131,8 +130,12 @@ body {
     color: black;
   }
 }
-
 .register-text {
   text-align: right;
+}
+.login > .card {
+  width: 22em;
+  margin: 0 auto;
+  float: none;
 }
 

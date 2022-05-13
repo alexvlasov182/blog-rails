@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @page_title %></title>
-    <%= csrf_meta_tags %>
+<head>
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tags %>
 
-    <meta name="keywords" content="<%= @seo_keywords %>">
+  <meta name="keywords" content="<%= @seo_keywords %>">
 
-    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="shortcut icon" href="https://api.rubyonrails.org/favicon.ico" />
-  </head>
+  <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="shortcut icon" href="https://api.rubyonrails.org/favicon.ico"/>
+</head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-    <%= login_helper %>
+  <%= login_helper %>
 
-    <%= yield %>
+  <%= yield %>
 
-    <%= render 'shared/nav', location: 'top' %>
+  <%= render 'shared/nav', location: 'top' %>
 
-    <%=	 source_helper("application") %>
+  <%= source_helper("application") %>
 
-  </body>
+</body>
 </html>
