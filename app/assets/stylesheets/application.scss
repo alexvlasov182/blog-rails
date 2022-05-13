@@ -126,7 +126,13 @@ body {
 .cover-container {
   max-width: 60rem;
 }
-.auth-links a {
-  color: black;
+.auth-links {
+  a {
+    color: black;
+  }
+}
+
+.register-text {
+  text-align: right;
 }
 
