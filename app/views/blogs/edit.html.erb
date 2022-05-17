@@ -12,8 +12,11 @@
       <h2>Editing Blog</h2>
       <%= render 'form', blog: @blog %>
 
-      <%= link_to 'Show', @blog %> |
-      <%= link_to 'Back', blogs_path %>
+      <div class="mb-4">
+        <%= link_to 'Show', @blog %> |
+        <%= link_to 'Back', blogs_path %>
+      </div>
+
     </div>
 
     <%= render 'shared/blog_sidebar' %>

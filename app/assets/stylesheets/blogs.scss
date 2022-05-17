@@ -1,5 +1,6 @@
 @import "bootstrap";
-
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
@@ -136,4 +137,18 @@ h1, h2, h3, h4, h5, h6 {
 
 div #error_explanation {
   color: tomato !important;
+}
+
+.social {
+  ol {
+    li {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
