@@ -1,14 +1,20 @@
-<p id="notice"><%= notice %></p>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <div class="border-bottom mb-4">
+        <h1 class="blog-title">My Blog</h1>
+        <p class="lead blog-description mt-2">My first blog on Ruby on Rails</p>
+        <div class="mb-3">
+          <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+        </div>
+      </div>
+      <h2><%= @blog.title %></h2>
+      <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+      <p><%= @blog.body %></p>
+    </div>
+    <%= render 'shared/blog_sidebar' %>
+  </div>
+</main>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', blogs_path %>

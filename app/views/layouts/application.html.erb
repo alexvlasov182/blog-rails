@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= @page_title %></title>
-    <%= csrf_meta_tags %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="keywords" content="<%= @seo_keywords %>">
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="shortcut icon" href="https://api.rubyonrails.org/favicon.ico" />
-  </head>
+  <meta name="keywords" content="<%= @seo_keywords %>">
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="shortcut icon" href="https://api.rubyonrails.org/favicon.ico"/>
+</head>
 
-    <%= render 'shared/nav', location: 'top' %>
+<body>
+<div class="container">
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <%= login_helper %>
+    <%= render 'shared/application_nav' %>
 
     <%= yield %>
 
-    <%= copyright_generator	%>
+    <%= render 'shared/applicaton_footer' %>
 
-    <%=	source_helper("application")  %>
+    <%= source_helper("application") %>
 
-  </body>
+  </div>
+</div>
+</body>
 </html>
