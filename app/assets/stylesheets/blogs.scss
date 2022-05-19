@@ -147,7 +147,16 @@ div #error_explanation {
         margin-bottom: 0;
       }
       a {
+        display: flex;
+        align-items: center;
         font-size: 1.1rem;
+
+        span {
+          margin-left: 10px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
