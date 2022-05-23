@@ -1,29 +1,38 @@
 <div class="container">
 
-  <div class=" <%= "portfolio-show" if logged_in?(:site_admin)%>">
+  <div class=" <%= "portfolio-show" if logged_in?(:site_admin) %>">
     <div class="row">
-    <div class="col-md-7">
-      <% if @portfolio_item.main_image %>
-        <%= image_tag portfolio_img(@portfolio_item.thumb_image, 'main'), width: '100%' %>
-      <% end %>
-    </div>
-    <div class="col-md-5">
-      <h1><%= @portfolio_item.title %></h1>
-
-      <em><%= @portfolio_item.subtitle %></em>
-
-      <div>
-        <p>
-          <%= @portfolio_item.body %>
-        </p>
+      <div class="col-md-7">
+        <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
       </div>
+      <div class="col-md-5">
+        <h1><%= @portfolio_item.title %></h1>
 
-      <h2>Technologies Used: </h2>
+        <hr>
 
-      <% @portfolio_item.technologies.each do |t| %>
-        <p><%= t.name %></p>
-      <% end %>
-    </div>
+        <em><%= @portfolio_item.subtitle %></em>
+
+        <div>
+          <p>
+            <%= @portfolio_item.body %>
+          </p>
+        </div>
+
+        <hr>
+
+        <h3>Technologies Used: </h3>
+
+        <% @portfolio_item.technologies.each do |t| %>
+          <p><%= t.name %></p>
+        <% end %>
+
+        <% if logged_in?(:site_admin) %>
+        <div class="btn-block">
+          <%=	 link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        </div>
+        <% end %>
+
+      </div>
     </div>
   </div>
 

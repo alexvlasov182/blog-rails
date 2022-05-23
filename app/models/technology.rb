@@ -1,3 +1,3 @@
 class Technology < ApplicationRecord
-  belongs_to :portfolio, dependent: :destroy
+  belongs_to :portfolio
 end
