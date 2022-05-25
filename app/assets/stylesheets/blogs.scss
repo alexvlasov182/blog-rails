@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import 'font-awesome';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+@import "gritter";
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
@@ -160,4 +161,8 @@ div #error_explanation {
       }
     }
   }
+}
+
+.blog-main {
+  margin-bottom: 40px;
 }
