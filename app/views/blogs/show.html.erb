@@ -9,6 +9,9 @@
         </div>
       </div>
       <h2><%= @blog.title %></h2>
+      <p class=" blog-description">
+        <%=	 @blog.topic.title %>
+      </p>
       <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
       <p><%= @blog.body %></p>
 
