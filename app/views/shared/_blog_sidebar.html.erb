@@ -8,6 +8,13 @@
   </div>
 
   <div class="p-3 social">
+    <h4 class="font-italic">Topics</h4>
+    <%	@side_bar_topics.each do |topic|  %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
+  <div class="p-3 social">
     <h4 class="font-italic">Elsewhere</h4>
     <ol class="list-unstyled">
       <li><a href="https://github.com/alexvlasov182" target="_blank"><%= fa_icon "github 2x" %><span>GitHub</span></a></li>
