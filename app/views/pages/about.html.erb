@@ -1,27 +1,32 @@
-<h1>About page</h1>
-<hr>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About page</h1>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-3">
 
-    <%= image_tag	"my.jpeg", width:190, height: 290, alt: "portfolio image"  %>
-  </div>
-  <div class="col-md-8">
-    <p class="text-center">Passionate about developing technologies and development on the server-side.
-      I have a little e-commerce experience in markup, but I have a great desire to work and learn. I spend all my free time
-      practicing Ruby on Rails development.</p>
+        <%= image_tag	"my.jpeg", width:190, height: 290, alt: "portfolio image", class: 'profile-image'  %>
+      </div>
+      <div class="col-md-9">
+        <p>Passionate about developing technologies and development on the server-side.
+          I have a little e-commerce experience in markup, but I have a great desire to work and learn. I spend all my free time
+          practicing Ruby on Rails development.</p>
 
-    <p class="text-center">I want to find a challenging and exciting project, that will allow me to apply and improve my skills and knowledge.
-      In my spare time, I study the Golang language, I find it a very interesting language with static typing and fast
-      compilation to bytecode.
-      I also made these projects myself:</p>
+        <p>I want to find a challenging and exciting project, that will allow me to apply and improve my skills and knowledge.
+          In my spare time, I study the Golang language, I find it a very interesting language with static typing and fast
+          compilation to bytecode.
+          I also made these projects myself:</p>
 
-    <ul class="list-item">
-      <li class="left">Simple http API server,</li>
-      <li class="left">CRUD,</li>
-      <li class="left">Creating cross-browser, semantic and valid code,</li>
-      <li class="left">Developing and implement a grid system (Media queries, Bootstrap) for mobile responsiveness.</li>
-    </ul>
+        <ul class="list-item">
+          <li class="left">Simple http API server,</li>
+          <li class="left">CRUD,</li>
+          <li class="left">Creating cross-browser, semantic and valid code,</li>
+          <li class="left">Developing and implement a grid system (Media queries, Bootstrap) for mobile responsiveness.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
+
 

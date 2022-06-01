@@ -180,6 +180,21 @@ div #error_explanation {
   padding: 20px;
 }
 
+.app-card-container {
+  color: black;
+  a {
+    color: deepskyblue;
+  }
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-image {
+  border-radius: 4px;
+}
+
 
 
 
