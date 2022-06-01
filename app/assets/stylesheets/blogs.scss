@@ -184,10 +184,22 @@ div #error_explanation {
 }
 
 .blogcrumb a {
-  font-size: 1.1em;
-  margin-right: 10px;
+  font-size: 1.25em;
+  margin: 0 10px 0 10px;
+
+}
+.blogcrumb {
+  background-color: #f8f9fa;
 }
 
 .blog-margin {
   margin-top: 64px;
+}
+
+.navbar {
+  padding: 1.3rem 1rem;
+}
+
+.menu-bar {
+  margin-left: 40px;
 }

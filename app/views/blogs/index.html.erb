@@ -4,13 +4,13 @@
       <div class="border-bottom mb-4">
         <h1 class="blog-title">My Blog</h1>
         <p class="lead blog-description mt-2">My first blog on Ruby on Rails</p>
-        <div class="mb-3">
+        <div>
           <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
         </div>
 
-        <span>
+        <div class="mb-3">
           <%= link_to "Topics", topics_path %>
-        </span>
+        </div>
       </div>
       <%= render @blogs %>
 

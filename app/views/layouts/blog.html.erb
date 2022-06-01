@@ -13,11 +13,8 @@
     <link rel="shortcut icon" href="https://api.rubyonrails.org/favicon.ico"/>
   </head>
   <body>
-    <div class="container">
-      <%= render 'shared/blog_header' %>
-      <%= render 'shared/blog_nav' %>
-      <%= render 'shared/blog_hero_img' %>
-    </div>
+    <%= render 'shared/blog_nav' %>
+
     <%= yield %>
 
     <%= render 'shared/blog_footer' %>
