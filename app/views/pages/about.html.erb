@@ -1,29 +1,59 @@
 <div class="app-card-container">
   <div class="card">
     <h1>About page</h1>
-    <hr>
+    <div class="about-wrapper">
+      <div class="row">
+        <div class="col-md-3">
 
-    <div class="row">
-      <div class="col-md-3">
+          <%= image_tag	"my.jpeg", width:180, height: 290, alt: "portfolio image", class: 'profile-image'  %>
+        </div>
+        <div class="col-md-9">
+          <p>Passionate about developing technologies and development on the server-side.
+            I have a little e-commerce experience in markup, but I have a great desire to work and learn. I spend all my free time
+            practicing Ruby on Rails development.</p>
 
-        <%= image_tag	"my.jpeg", width:190, height: 290, alt: "portfolio image", class: 'profile-image'  %>
-      </div>
-      <div class="col-md-9">
-        <p>Passionate about developing technologies and development on the server-side.
-          I have a little e-commerce experience in markup, but I have a great desire to work and learn. I spend all my free time
-          practicing Ruby on Rails development.</p>
+          <p>I want to find a challenging and exciting project, that will allow me to apply and improve my skills and knowledge.
+            In my spare time, I study the Golang language, I find it a very interesting language with static typing and fast
+            compilation to bytecode.
+            I also made these projects myself:</p>
 
-        <p>I want to find a challenging and exciting project, that will allow me to apply and improve my skills and knowledge.
-          In my spare time, I study the Golang language, I find it a very interesting language with static typing and fast
-          compilation to bytecode.
-          I also made these projects myself:</p>
+          <ul class="list-item">
+            <li class="left">Simple http API server,</li>
+            <li class="left">CRUD,</li>
+            <li class="left">Creating cross-browser, semantic and valid code,</li>
+            <li class="left">Developing and implement a grid system (Media queries, Bootstrap) for mobile responsiveness.</li>
+          </ul>
 
-        <ul class="list-item">
-          <li class="left">Simple http API server,</li>
-          <li class="left">CRUD,</li>
-          <li class="left">Creating cross-browser, semantic and valid code,</li>
-          <li class="left">Developing and implement a grid system (Media queries, Bootstrap) for mobile responsiveness.</li>
-        </ul>
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#jobsHistory" aria-expanded="false" aria-controls="jobHistory">
+              Job History
+
+            </button>
+            <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#education" aria-expanded="false" aria-controls="education">
+              Education
+
+            </button>
+          </p>
+          <p>
+            <div class="collapse" id="jobsHistory">
+              <div class="card card-block">
+                Jobbbsssss
+              </div>
+              <div class="card card-block">
+                Jobbbsssss
+              </div>
+            </div>
+
+            <div class="collapse" id="education">
+              <div class="card card-block">
+                education 1
+              </div>
+              <div class="card card-block">
+                education 2
+              </div>
+            </div>
+          </p>
+        </div>
       </div>
     </div>
   </div>

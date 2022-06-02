@@ -181,6 +181,8 @@ div #error_explanation {
 }
 
 .app-card-container {
+  max-width: 880px;
+  margin: 0 auto;
   color: black;
   a {
     color: deepskyblue;
@@ -195,6 +197,24 @@ div #error_explanation {
   border-radius: 4px;
 }
 
+.about-wrapper {
+  margin-top: 24px;
+  max-width: 790px;
+}
+
+.contact-card-container {
+  width: 100%;
+}
+
+.contact-container-wrapper {
+  margin-top: 24px;
+}
+
+.card-block {
+  padding: 20px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 
