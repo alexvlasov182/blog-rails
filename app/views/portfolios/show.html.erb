@@ -10,9 +10,9 @@
 
         <hr>
 
-        <em><%= @portfolio_item.subtitle %></em>
+        <em class="portfolio-description"><%= @portfolio_item.subtitle %></em>
 
-        <div>
+        <div class="portfolio-body">
           <p>
             <%= @portfolio_item.body %>
           </p>
@@ -28,7 +28,7 @@
 
         <% if logged_in?(:site_admin) %>
         <div class="btn-block">
-          <%=	 link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+          <%=	 link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning portfolio-btn' %>
         </div>
         <% end %>
 

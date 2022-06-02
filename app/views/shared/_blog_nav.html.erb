@@ -1,7 +1,16 @@
-<div class="nav-scroller py-1 mb-2">
-  <nav class="nav d-flex ">
-    <%= nav_helper 'nav-link', 'span'	  %>
+<nav class="navbar navbar-expand-md bg-light width bg-feaded blog-nav">
+  <div class="container container-fluid">
+    <a class="navbar-brand" href="#">Alex Vlasov</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  </nav>
-</div>
+    <div class="collapse navbar-collapse menu-bar" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <%=	 nav_helper 'nav-link', 'li' %>
+        <%=	 login_helper 'nav-link' %>
+      </ul>
+    </div>
+  </div>
+</nav>
 

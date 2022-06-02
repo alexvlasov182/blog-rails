@@ -6,6 +6,14 @@
   --jumbotron-padding-y: 3rem;
 }
 
+body {
+  font-family: 'Lato', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -50,4 +58,31 @@ footer p {
 
 .portfolio-show {
   margin-top: 100px;
+}
+
+.portfolio-description {
+  color: grey;
+  font-style: italic;
+}
+
+.card-text {
+  margin-bottom: 0;
+}
+
+.portfolio-delete {
+  margin-top: 20px;
+}
+
+.portfolio-body {
+  margin-top: 15px;
+}
+
+.portfolio-btn {
+  color: white;
+}
+
+.navbar-brand {
+  strong {
+    font-family: 'Roboto Slab', serif;
+  }
 }
