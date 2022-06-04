@@ -20,28 +20,29 @@
 </head>
 
 <body>
-<div class="container">
-  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+  <div class="site-wrapper">
+    <div class="container d-flex h-100 p-3 mx-auto flex-column">
 
-    <%=video_tag(
-          'HardDrivePhotojpeg.mp4',
-          id: 'background',
-          autoplay: true,
-          loop: true,
-          muted: true,
-          poster: 'home_bg.png'
-       )
-    %>
+      <%=video_tag(
+             'HardDrivePhotojpeg.mp4',
+             id: 'background',
+             autoplay: true,
+             loop: true,
+             muted: true,
+             poster: 'home_bg.png'
+         )
+      %>
 
-    <%= render 'shared/application_nav' %>
+      <%= render 'shared/application_nav' %>
 
-    <%= yield %>
+      <%= yield %>
 
-    <%= render 'shared/applicaton_footer' %>
+      <%= render 'shared/applicaton_footer' %>
 
-    <%=	 alerts %>
+      <%=	 alerts %>
 
+    </div>
   </div>
-</div>
+
 </body>
 </html>
