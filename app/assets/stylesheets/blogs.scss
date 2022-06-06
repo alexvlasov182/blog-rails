@@ -239,3 +239,10 @@ div #error_explanation {
 .font-italic {
   font-weight: 500;
 }
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
