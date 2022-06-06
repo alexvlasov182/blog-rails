@@ -34,12 +34,12 @@ module ApplicationHelper
         title: 'Contact'
       },
       {
-          url: workflow_path,
-          title: 'Workflow'
+          url: blogs_path,
+          title: 'Blog'
       },
       {
-        url: blogs_path,
-        title: 'Blog'
+          url: workflow_path,
+          title: 'Workflow'
       },
       {
         url: portfolios_path,

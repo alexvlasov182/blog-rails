@@ -218,7 +218,6 @@ div #error_explanation {
 
 .about-wrapper {
   margin-top: 24px;
-  max-width: 790px;
 }
 
 .contact-card-container {
@@ -253,6 +252,18 @@ div #error_explanation {
 .card-font {
   font-family: 'Lato', sans-serif;
 }
+
+.workflow-description {
+  color: grey;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 
