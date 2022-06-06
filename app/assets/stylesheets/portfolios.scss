@@ -63,9 +63,6 @@ footer p {
   padding: 20px;
 }
 
-.portfolio-show {
-  margin-top: 100px;
-}
 
 .portfolio-description {
   color: grey;
@@ -92,4 +89,8 @@ footer p {
   strong {
     font-family: 'Roboto Slab', serif;
   }
+}
+
+.card {
+  min-height: 330px;
 }

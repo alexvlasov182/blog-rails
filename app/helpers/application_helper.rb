@@ -34,6 +34,10 @@ module ApplicationHelper
         title: 'Contact'
       },
       {
+          url: workflow_path,
+          title: 'Workflow'
+      },
+      {
         url: blogs_path,
         title: 'Blog'
       },
@@ -44,11 +48,7 @@ module ApplicationHelper
       {
           url: tech_news_path,
           title: 'Tech News'
-      },
-      {
-          url: workflow_path,
-          title: 'Workflow'
-      },
+      }
     ]
   end
 
