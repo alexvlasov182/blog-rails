@@ -22,9 +22,7 @@
   <body>
   <div class="flex-wrapper">
     <%= render 'shared/portfolio_header' %>
-
-    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
-
+    
     <%= yield %>
 
     <%= alerts %>
