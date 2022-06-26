@@ -7,6 +7,6 @@ module DefaultPageContent
 
   def set_page_defaults
     @page_title = 'Blog Rails - My Portfolio Website'
-    @seo_keywords = "Galex Galsov Portfolio"
+    @seo_keywords = 'Galex Galsov Portfolio'
   end
 end
